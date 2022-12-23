@@ -71,7 +71,7 @@
                                                 </a>
                                                 <form action="{{ route('accounts.destroy', $account->id) }}" method="POST">
                                                     @csrf @method('DELETE')
-                                                    <button onclick="return confirm('Are you sure delete {{ $account->nama }}?')" type="submit" class="btn btn-sm btn-danger">
+                                                    <button onclick="return confirm('Apa anda yakin akan menghapus data {{ $account->nama }}?')" type="submit" class="btn btn-sm btn-danger">
                                                         <i class="far fa-trash-alt"></i>
                                                     </button>
                                                 </form>

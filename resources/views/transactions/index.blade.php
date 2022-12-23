@@ -71,7 +71,7 @@
                                                 </a>
                                                 <form action="{{ route('transactions.destroy', $transaction->id) }}" method="POST">
                                                     @csrf @method('DELETE')
-                                                    <button onclick="return confirm('Are you sure delete {{ $transaction->nama }}?')" type="submit" class="btn btn-sm btn-danger">
+                                                    <button onclick="return confirm('Apa anda yakin akan menghapus data {{ $transaction->nama }}?')" type="submit" class="btn btn-sm btn-danger">
                                                         <i class="far fa-trash-alt"></i>
                                                     </button>
                                                 </form>
