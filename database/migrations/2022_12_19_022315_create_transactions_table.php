@@ -19,8 +19,9 @@ class CreateTransactionsTable extends Migration
             $table->string('kategori', 50);
             $table->double('nominal');
             $table->string('tujuan');
-            $table->char('account_id', 16)->nullable()->unique();
+            $table->char('account_id', 16)->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
