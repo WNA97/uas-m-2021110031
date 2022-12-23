@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Validation\Rules\Unique;
 
 class CreateTransactionsTable extends Migration
 {
@@ -15,6 +16,10 @@ class CreateTransactionsTable extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
+            $table->string('kategori', 50);
+            $table->double('nominal');
+            $table->string('tujuan');
+            $table->char('account_id', 16)->nullable()->unique();
             $table->timestamps();
         });
     }
