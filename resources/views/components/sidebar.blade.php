@@ -8,7 +8,7 @@
                 <li class="menu-title">Main</li>
                 <li>
                     <a href="{{ route('dashboard') }}" class="waves-effect">
-                        <i class="mdi mdi-home"></i><span class="badge badge-primary float-right"></span> <span> Dashboard </span>
+                        <i class="mdi mdi-home"></i><span class="badge badge-warning float-right"></span> <span> Dashboard </span>
                     </a>
                 </li>
                 <li class="menu-title">ACCOUNTS</li>

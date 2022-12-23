@@ -84,7 +84,7 @@
 
             <div class="form-group">
                 <div>
-                    <a href="{{ route('transactions.edit',$transaction->id) }}" class="btn btn-primary waves-effect m-l-5">
+                    <a href="{{ route('transactions.edit',$transaction->id) }}" class="btn btn-warning waves-effect m-l-5">
                         Edit
                     </a>
                     <a href="{{ route('transactions.index') }}" class="btn btn-secondary waves-effect waves-light">

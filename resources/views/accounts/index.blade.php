@@ -13,7 +13,7 @@
     </ol>
     {{-- <div class="state-information d-none d-sm-block">
         <div class="dropdown pt-3 d-inline-block">
-            <a class="btn btn-primary waves-effect waves-light" href="{{ route('accounts.create') }}" role="button">
+            <a class="btn btn-warning waves-effect waves-light" href="{{ route('accounts.create') }}" role="button">
     Create New
     </a>
 </div>

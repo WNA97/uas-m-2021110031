@@ -30,9 +30,8 @@ class TransactionController extends Controller
     {
         $faker = Faker::create('id_ID');
         $kategori = $faker->randomElement(['Sales ', 'Purchases', 'Receipts', 'Payments']);
-        $nama = $faker->name();
         $accounts = Account::all();
-        return view('transactions.create', compact('accounts', 'kategori', 'nama'));
+        return view('transactions.create', compact('accounts', 'kategori'));
     }
 
     /**

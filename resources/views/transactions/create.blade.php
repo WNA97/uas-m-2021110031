@@ -64,7 +64,7 @@
             <div class="form-group row">
                 <label for="tujuan" class="col-sm-2 col-form-label">Receiver</label>
                 <div class="col-sm-6">
-                    <input class="form-control @error('tujuan') is-invalid @enderror" type="text" name="tujuan" id="tujuan" value="{{ old('tujuan') ?? $nama}}" />
+                    <input class="form-control @error('tujuan') is-invalid @enderror" type="text" name="tujuan" id="tujuan" value="{{ old('tujuan')}}" />
                     @error('tujuan')
                     <div class="text-danger">{{ $message }}</div>
                     @enderror
@@ -88,7 +88,7 @@
 
             <div class="form-group">
                 <div>
-                    <button type="submit" class="btn btn-primary waves-effect waves-light">
+                    <button type="submit" class="btn btn-warning waves-effect waves-light">
                         Save
                     </button>
                     <a href="{{ route('transactions.index') }}" class="btn btn-secondary waves-effect waves-light">

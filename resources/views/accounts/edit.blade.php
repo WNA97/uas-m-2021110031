@@ -55,7 +55,7 @@
 
                         <div class="form-group">
                             <div>
-                                <button type="submit" class="btn btn-primary waves-effect waves-light">
+                                <button type="submit" class="btn btn-warning waves-effect waves-light">
                                     Save
                                 </button>
                                 <a href="{{ route('accounts.index') }}" class="btn btn-secondary waves-effect m-l-5">

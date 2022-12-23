@@ -78,16 +78,6 @@ class AccountController extends Controller
      */
     public function update(Request $request, Account $account)
     {
-        // $rules = [
-        //     'id' => 'required|digits:16',
-        //     'nama' => 'required|max:255',
-        //     'jenis' => 'required',
-        // ];
-        // $validated = $request->validate($rules);
-        // $account::where('id', [$account->id])->update($validated);
-        // $request->session()->flash('success', "Berhasil melakukan update data {$validated['nama']}!");
-        // return redirect()->route('accounts.index');
-
         $validateData = $request->validate([
             // 'id' => 'required|digits:16',
             'nama' => 'required|max:255',
